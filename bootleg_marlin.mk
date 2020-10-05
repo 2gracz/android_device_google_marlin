@@ -3,16 +3,16 @@ TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_USE_AOSP_SURFACEFLINGER := true
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Bootleggers stuff.
+$(call inherit-product, vendor/bootleg/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 
--include device/google/marlin/marlin/device-lineage.mk
+-include device/google/marlin/marlin/device-bootleg.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_marlin
+PRODUCT_NAME := bootleg_marlin
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel XL
 TARGET_MANUFACTURER := HTC
@@ -25,6 +25,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/marlin/marlin:8.1.0/OPM1.171019.021/4565141:user/release-keys
 
 $(call inherit-product-if-exists, vendor/google/marlin/marlin-vendor.mk)
-SAKURA_OFFICIAL := true
-SAKURA_GAPPS := true
-GAPPS_ARCH := arm64
