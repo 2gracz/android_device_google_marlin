@@ -25,6 +25,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/marlin/marlin:8.1.0/OPM1.171019.021/4565141:user/release-keys
 
 $(call inherit-product-if-exists, vendor/google/marlin/marlin-vendor.mk)
-SAKURA_OFFICIAL := true
-SAKURA_GAPPS := true
-GAPPS_ARCH := arm64
+
