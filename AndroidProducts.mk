@@ -6,4 +6,6 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
 	aosp_marlin-userdebug \
-	aosp_sailfish-userdebug
+	aosp_sailfish-userdebug \
+	bootleg_marlin-userdebug \
+	bootleg_sailfish-userdebug
