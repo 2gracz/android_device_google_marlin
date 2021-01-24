@@ -41,3 +41,5 @@ PRODUCT_PACKAGES += \
     Launcher3QuickStep \
     WallpaperPicker
 
+TARGET_USES_AOSP_SURFACEFLINGER := true
+TARGET_BOOT_ANIMATION_RES := 1080
